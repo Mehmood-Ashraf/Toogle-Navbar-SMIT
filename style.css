@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.logo{
+    display: flex;
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.social{
+    /* width: 30px;
+    height: 30px; */
+    display: flex;
+    gap: 10px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+.toogle{
+    display: none;
+}
+
+.toogle button{
+    cursor: pointer;
+}
+
+.toogle-nav{
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 50px;
+    top: 0;
+}
+
+#toogle{
+    display: none;
+}
+
+.toogle-logo{
+    display: flex;
+    gap: 65px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.toogle-logo button{
+    background: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.toogle-links{
+    padding: 10px;
+}
+
+.toogle-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 700px) {
+    .social{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+
+    .toogle{
+        display: block;
+    }
+
+    .navbar{
+        justify-content: right;
+    }
+
+    .logo{
+        display: none;
+    }
+}

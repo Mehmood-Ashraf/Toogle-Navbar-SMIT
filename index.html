@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toogle Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo" id="logo">
+            <h1>Coding Addict</h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="social">
+            <img src="./Assets/facebook.0d22b4d986cc357e30b7.png" alt="">
+            <img src="./Assets/instagram.1506b398fa46f19bb324.png" alt="">
+            <img src="./Assets/youtube.25bcb63515915fad0160.png" alt="">
+        </div>
+
+        <div class="toogle" id="toogle-btn">
+            <button onclick="showToogle()"><img src="./Assets/download1.png" alt=""></button>
+        </div>
+    </div>
+
+    <div class="toogle-nav" id="toogle">
+        <div class="toogle-1">
+            <div class="toogle-logo">
+                <h1>Coding Addict</h1>
+                <button id="btn-x" onclick="closeToogle()">X</button>
+            </div>
+            <div class="toogle-links">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>  
+        </div>
+
+        <div class="toogle-logo">
+            <img src="./Assets/facebook.0d22b4d986cc357e30b7.png" alt="">
+            <img src="./Assets/instagram.1506b398fa46f19bb324.png" alt="">
+            <img src="./Assets/youtube.25bcb63515915fad0160.png" alt="">
+        </div>
+    </div>
+
+    <script src="first.js"></script>
+</body>
+</html>
